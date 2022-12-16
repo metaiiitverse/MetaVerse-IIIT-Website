@@ -1,6 +1,10 @@
 import React from 'react'
 
 function HeroSection() {
+
+
+
+  
   return (
     <div>
         <section className="text-gray-400 bg-gray-900 body-font">
@@ -16,8 +20,16 @@ function HeroSection() {
         <input type="text" id="full-name" name="full-name" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
       <div className="relative mb-4">
+        <label for="full-name" className="leading-7 text-sm text-gray-400">Branch</label>
+        <input type="text" id="branch" name="branch" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+      </div>
+      <div className="relative mb-4">
         <label for="email" className="leading-7 text-sm text-gray-400">Email</label>
         <input type="email" id="email" name="email" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+      </div>
+      <div className="relative mb-4">
+        <label for="email" className="leading-7 text-sm text-gray-400">Password</label>
+        <input type="password" id="password" name="password" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
       <button className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Register</button>
       <p className="text-xs mt-3">the furture of internet awaits </p>
