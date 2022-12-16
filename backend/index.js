@@ -8,40 +8,47 @@ const bcrypt = require("bcryptjs");
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 
+require("dotenv").config();
+require("./userDetails");
+const User = mongoose.model("UserInfo");
+
 const jwt = require("jsonwebtoken");
-
-
-const JWT_SECRET =
-  "hvdvay6erakfpaifhiFJBOUAHFOJCBOJJBpdhhOOOHPSNNVPNKMZPJPJkznvnzovhoiflknzvkvo";
-
-const mongoUrl =
-  "mongodb+srv://prajna:prajna@cluster0.o0mqztn.mongodb.net/test";
+const JWT_SECRET = process.env.JWT_SECRET;
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose
-  .connect(mongoUrl, {
+  .connect(MONGO_URL, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(() => {
     console.log("Connected to database");
   })
   .catch((e) => console.log(e));
-require("./userDetails");
 
-const User = mongoose.model("UserInfo");
 app.post("/register", async (req, res) => {
   const { fullname, branch, email, password } = req.body;
 
-  const encryptedPassword = await bcrypt.hash(password, 10);
+  let encryptedPassword;
+  try {
+    encryptedPassword = await bcrypt.hash(
+      password,
+      Number(process.env.BCRYPT_NM)
+    );
+  } catch (err) {
+    console.log(err.message);
+    return res
+      .status(500)
+      .json({ ok: false, Message: err.message || "Something went wrong!" });
+  }
   try {
     const oldUser = await User.findOne({ email });
-
     if (oldUser) {
       return res.json({ error: "User Exists" });
     }
     await User.create({
-      fullname,
-      branch,
+      fname: fullname,
+      bname: branch,
       email,
       password: encryptedPassword,
     });
@@ -51,6 +58,8 @@ app.post("/register", async (req, res) => {
   }
 });
 
-app.listen(4000, () => {
-    console.log("Server Started");
-  });
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("Server Started");
+});
