@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MetaVerse-IIIT-Website/static/css/main.c1babb64.css",
-    "main.js": "/MetaVerse-IIIT-Website/static/js/main.a12292c7.js",
+    "main.js": "/MetaVerse-IIIT-Website/static/js/main.28380fe8.js",
     "static/js/787.d7145dc2.chunk.js": "/MetaVerse-IIIT-Website/static/js/787.d7145dc2.chunk.js",
     "index.html": "/MetaVerse-IIIT-Website/index.html",
     "main.c1babb64.css.map": "/MetaVerse-IIIT-Website/static/css/main.c1babb64.css.map",
-    "main.a12292c7.js.map": "/MetaVerse-IIIT-Website/static/js/main.a12292c7.js.map",
+    "main.28380fe8.js.map": "/MetaVerse-IIIT-Website/static/js/main.28380fe8.js.map",
     "787.d7145dc2.chunk.js.map": "/MetaVerse-IIIT-Website/static/js/787.d7145dc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1babb64.css",
-    "static/js/main.a12292c7.js"
+    "static/js/main.28380fe8.js"
   ]
 }
