@@ -9,8 +9,9 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 
 require("dotenv").config();
-require("./userDetails");
-const User = mongoose.model("UserInfo");
+require("./MetaDay2");
+
+const User = mongoose.model("MetaDay2");
 
 const jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET;
