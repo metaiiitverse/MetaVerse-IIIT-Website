@@ -3,7 +3,7 @@ import axios from "axios";
 
 function HeroSection() {
   const [form, setForm] = useState({
-    name: "",
+    fullname: "",
     branch: "",
     email: "",
     password: "",
