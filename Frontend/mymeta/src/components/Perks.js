@@ -80,12 +80,14 @@ function Perks() {
             <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
             <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event.</p>
           </div>
+         
         </div>
       </div>
       
     </div>
-  </section></div>
-  )
+    </section>
+    </div>
+  );
 }
 
-export default Perks
+export default Perks;
