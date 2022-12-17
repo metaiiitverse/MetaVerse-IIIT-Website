@@ -24,9 +24,9 @@ const Form = () => {
       throw new Error("Name length should be greater than 1");
     } else if (!options.includes(form.branch)) {
       throw new Error("Please select a valid branch");
-    } else if (form.password < 4) {
+    } else if (form.password.length < 4) {
       throw new Error("Password should have atleast 4 characters");
-    } else if (form.email < 1) {
+    } else if (form.email.length < 1) {
       throw new Error("Enter a valid email");
     } else {
       return true;

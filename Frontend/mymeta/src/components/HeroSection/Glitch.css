@@ -494,7 +494,7 @@ section {
   text-align: center;
   background: #000000; /* fallback for old browsers */
   background: linear-gradient(to right, #6e04714a, #0a63772a);
-  padding: 50px 150px 50px 150px;
+  padding: 30px 60px 30px 60px;
   margin-right: 10px;
   border-radius: 20px;
   z-index: 0;

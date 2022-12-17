@@ -10,7 +10,13 @@ function Header() {
           <img className="nav-img" src={icn} alt="" />
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 hover:text-white" href="/">
-              METAVERSE IIIT BH
+              <p
+                style={{ fontSize: "20px" }}
+                className="devnagri hero glitch layers"
+                data-text="META VERSE"
+              >
+                <span>METAVERSE</span>
+              </p>
             </a>
           </nav>
           <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
