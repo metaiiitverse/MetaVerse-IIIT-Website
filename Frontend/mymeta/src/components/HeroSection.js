@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+
 function HeroSection() {
   const [form, setForm] = useState({
     fullname: "",
@@ -9,6 +10,7 @@ function HeroSection() {
     password: "",
   });
 
+  const[signUp,setSignUp]= useState(false)
   console.log(form);
 
   const post = async () => {
@@ -18,20 +20,23 @@ function HeroSection() {
       data: form,
     };
 
-    // send the request
+    // send the requestgit
     const res = await axios(options);
     console.log(res);
+    setSignUp(true)
+    
   };
 
   return (
     <div>
-      <section className="text-gray-400 bg-gray-900 body-font">
+      <section className="text-gray-400 bg-gray-900 body-font" style={ {backgroundImage: 
+      "url('https://static.wixstatic.com/media/4c501d_131809e4210d454585b1d60dd93d1c7c~mv2.jpg/v1/fill/w_1200,h_601,al_c,q_85,enc_auto/4c501d_131809e4210d454585b1d60dd93d1c7c~mv2.jpg)",}}>
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-            <h1 className="title-font font-medium text-3xl text-white">
+            <h1 className="title-font font-medium text-5xl text-white">
               Welcome to meta
             </h1>
-            <p className="leading-relaxed mt-4">
+            <p className="leading-relaxed mt-4 text-white text-2xl">
               Deep dive with us into the furture of blockchain technology
             </p>
           </div>
@@ -115,7 +120,7 @@ function HeroSection() {
             >
               Register
             </button>
-            <p className="text-xs mt-3">the furture of internet awaits </p>
+            <p className="text-xs mt-3 text-white">{signUp?"Welcomw to furture":"the furture of internet awaits" }</p>
           </div>
         </div>
       </section>

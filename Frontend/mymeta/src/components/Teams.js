@@ -120,6 +120,8 @@ function Teams() {
         </div>
       </div>
     </div>
+    </section>
+    </div>
   );
 }
 

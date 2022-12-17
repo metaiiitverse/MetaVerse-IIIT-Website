@@ -19,8 +19,8 @@ function Perks() {
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
-            <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
-            <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event.</p>
+            <h2 class="text-lg text-white font-medium title-font mb-2">Explore</h2>
+            <p class="leading-relaxed text-base">plethora of unexplored platforms as this is a relatively new domain .</p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -32,8 +32,8 @@ function Perks() {
                 <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
               </svg>
             </div>
-            <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
-            <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event.</p>
+            <h2 class="text-lg text-white font-medium title-font mb-2">Equippe</h2>
+            <p class="leading-relaxed text-base"> equipping yourself with meta will contribute to you becoming thorough with tech in the future.</p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -44,8 +44,9 @@ function Perks() {
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </div>
-            <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
-            <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event..</p>
+            <h2 class="text-lg text-white font-medium title-font mb-2">Meet</h2>
+            
+            <p class="leading-relaxed text-base">Meet and engage with meta and blockchian enthusiasts</p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -55,8 +56,8 @@ function Perks() {
                 <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
               </svg>
             </div>
-            <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
-            <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event.</p>
+            <h2 class="text-lg text-white font-medium title-font mb-2">Meet</h2>
+            <p class="leading-relaxed text-base">Meet and engage with meta and blockchian enthusiasts</p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -66,8 +67,8 @@ function Perks() {
                 <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
               </svg>
             </div>
-            <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
-            <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event.</p>
+            <h2 class="text-lg text-white font-medium title-font mb-2">Skills</h2>
+            <p class="leading-relaxed text-base">Gain skills to become a kickass developer</p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -77,8 +78,8 @@ function Perks() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
-            <h2 class="text-lg text-white font-medium title-font mb-2">Random text</h2>
-            <p class="leading-relaxed text-base">This is a place holder text which we can replace with perks of metaverse event.</p>
+            <h2 class="text-lg text-white font-medium title-font mb-2">Participate</h2>
+            <p class="leading-relaxed text-base">compete and learn via blockchain events and contests.</p>
           </div>
          
         </div>
