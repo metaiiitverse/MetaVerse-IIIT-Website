@@ -2,7 +2,8 @@ import React from 'react'
 
 function Teams() {
   return (
-    <div><section className="text-gray-400 bg-gray-900 body-font">
+    <div><section className="text-gray-400 bg-gray-900 body-font" style={ {backgroundImage: 
+      "url('https://static.wixstatic.com/media/4c501d_1b68643450054020b87032e373a14701~mv2.jpg/v1/fill/w_1899,h_1015,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c501d_1b68643450054020b87032e373a14701~mv2.jpg')",}}>
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-col text-center w-full mb-20">
         <h1 className="text-2xl font-medium title-font mb-4 text-white">Meet The Team</h1>

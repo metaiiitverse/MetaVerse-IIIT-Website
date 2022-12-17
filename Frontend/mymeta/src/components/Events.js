@@ -1,8 +1,10 @@
 import React from 'react'
-
+// https://www.matrise.no/wp-content/uploads/2020/11/metaverse_illustration-1536x864.jpg
 function Events () {
+
   return (
-    <div> <section class="text-gray-400 bg-gray-900 body-font">
+    <div> <section class="text-gray-400 bg-gray-900 body-font" style={ {backgroundImage: 
+      "url(' https://www.matrise.no/wp-content/uploads/2020/11/metaverse_illustration-1536x864.jpg')",}}>
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex flex-col text-center w-full mb-20">
         
