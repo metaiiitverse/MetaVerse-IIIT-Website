@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Teams() {
   return (
@@ -120,8 +120,7 @@ function Teams() {
         </div>
       </div>
     </div>
-  </section></div>
-  )
+  );
 }
 
-export default Teams
+export default Teams;
