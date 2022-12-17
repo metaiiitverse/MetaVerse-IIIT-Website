@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
 function HeroSection() {
   const [form, setForm] = useState({
     fullname: "",
@@ -10,7 +9,10 @@ function HeroSection() {
     password: "",
   });
 
-  const[signUp,setSignUp]= useState(false)
+  const options = ['CSE', 'CE', 'IT', 'EEE', 'ETC', 'Free Spirit'];
+ 
+
+  const [signUp, setSignUp] = useState(false);
   console.log(form);
 
   const post = async () => {
@@ -23,14 +25,18 @@ function HeroSection() {
     // send the requestgit
     const res = await axios(options);
     console.log(res);
-    setSignUp(true)
-    
+    setSignUp(true);
   };
 
   return (
     <div>
-      <section className="text-gray-400 bg-gray-900 body-font" style={ {backgroundImage: 
-      "url('https://static.wixstatic.com/media/4c501d_131809e4210d454585b1d60dd93d1c7c~mv2.jpg/v1/fill/w_1200,h_601,al_c,q_85,enc_auto/4c501d_131809e4210d454585b1d60dd93d1c7c~mv2.jpg)",}}>
+      <section
+        className="text-gray-400 bg-gray-900 body-font"
+        style={{
+          backgroundImage:
+            "url('https://static.wixstatic.com/media/4c501d_131809e4210d454585b1d60dd93d1c7c~mv2.jpg/v1/fill/w_1200,h_601,al_c,q_85,enc_auto/4c501d_131809e4210d454585b1d60dd93d1c7c~mv2.jpg)",
+        }}
+      >
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
             <h1 className="title-font font-medium text-5xl text-white">
@@ -70,17 +76,24 @@ function HeroSection() {
               >
                 Branch
               </label>
-              <input
-                type="text"
+              <select
                 id="branch"
                 name="branch"
-                className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-grey-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                value={form.branch}
                 onChange={(e) =>
                   setForm((curr) => {
                     return { ...curr, branch: e.target.value };
                   })
                 }
-              />
+              >
+                <option value="default">Select an option</option>
+                {options.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
             </div>
             <div className="relative mb-4">
               <label for="email" className="leading-7 text-sm text-gray-400">
@@ -120,7 +133,9 @@ function HeroSection() {
             >
               Register
             </button>
-            <p className="text-xs mt-3 text-white">{signUp?"Welcomw to furture":"the furture of internet awaits" }</p>
+            <p className="text-xs mt-3 text-white">
+              {signUp ? "Welcomw to furture" : "the furture of internet awaits"}
+            </p>
           </div>
         </div>
       </section>
