@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MetaVerse-IIIT-Website/static/css/main.815fce77.css",
-    "main.js": "/MetaVerse-IIIT-Website/static/js/main.1cd0b422.js",
+    "main.css": "/MetaVerse-IIIT-Website/static/css/main.c1babb64.css",
+    "main.js": "/MetaVerse-IIIT-Website/static/js/main.a12292c7.js",
     "static/js/787.d7145dc2.chunk.js": "/MetaVerse-IIIT-Website/static/js/787.d7145dc2.chunk.js",
     "index.html": "/MetaVerse-IIIT-Website/index.html",
-    "main.815fce77.css.map": "/MetaVerse-IIIT-Website/static/css/main.815fce77.css.map",
-    "main.1cd0b422.js.map": "/MetaVerse-IIIT-Website/static/js/main.1cd0b422.js.map",
+    "main.c1babb64.css.map": "/MetaVerse-IIIT-Website/static/css/main.c1babb64.css.map",
+    "main.a12292c7.js.map": "/MetaVerse-IIIT-Website/static/js/main.a12292c7.js.map",
     "787.d7145dc2.chunk.js.map": "/MetaVerse-IIIT-Website/static/js/787.d7145dc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.815fce77.css",
-    "static/js/main.1cd0b422.js"
+    "static/css/main.c1babb64.css",
+    "static/js/main.a12292c7.js"
   ]
 }
