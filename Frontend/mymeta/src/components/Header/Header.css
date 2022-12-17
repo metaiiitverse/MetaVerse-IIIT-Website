@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+}
+.nav-img {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(209, 13, 196), -4px 0 24px rgb(13, 184, 203);
+}
+.fnt-rubic {
+  font-family: "Rubik Spray Paint", cursive;
+  font-size: 100px;
+}
